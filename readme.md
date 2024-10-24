@@ -1,13 +1,13 @@
 # Kitaplık Yönetim Sistemi 📚
 
-Bu proje, kişisel kitaplık verilerinizi yönetmek için geliştirilmiş bir **SQL** tabanlı kitaplık yönetim sistemidir. Proje, kitapların, kullanıcıların ve okuma sürelerinin takibini sağlar. Ayrıca veri manipülasyonu ve kullanıcıların okuma alışkanlıklarını izlemek için **stored procedure** ve **trigger** kullanımı içerir.
+Bu proje, kişisel kitaplık verilerinizi yönetmek için geliştirilmiş bir **SQL** tabanlı kitaplık yönetim sistemidir. Proje; kitapların, kullanıcıların ve okuma sürelerinin takibini sağlar. Ayrıca veri manipülasyonu ve kullanıcıların okuma alışkanlıklarını izlemek için **stored procedure** ve **trigger** kullanımı içerir.
 
 ## Özellikler 🚀
 
-- 📖 **Kitap Ekleme:** Yeni kitaplar eklenebilir ve bu kitaplar için gerekli tüm bilgiler depolanır.
-- 👤 **Kullanıcı Yönetimi:** Kullanıcıların sisteme eklenmesi ve güncellenmesi.
+- 📖 **Kitap Ekleme:** Yeni kitaplar eklenebilir ve bu kitaplar için gerekli tüm bilgiler depolanabilir.
+- 👤 **Kullanıcı Yönetimi:** Kullanıcıların sisteme eklenmesi ve güncellenmesi işlemleri gerçekleştirilebilir.
 - ⏱️ **Okuma Takibi:** Kullanıcıların haftalık okuma sürelerini takip edebilir ve toplam okuma süreleri hesaplanabilir.
-- 🌟 **İstek Listesi:** Kullanıcılar okumak istedikleri kitapları kaydedebilir ve takip edebilir.
+- 🌟 **İstek Listesi:** Kullanıcılar okumak istedikleri kitapları kaydedilebilir ve takip edilebilir.
 - 🔄 **Etkinlik Günlüğü:** Kullanıcıların etkinlikleri kaydedilir, böylece okuma alışkanlıkları analiz edilebilir.
 - 📝 **SQL Stored Procedures & Triggers:** Veri tabanı işlemlerini otomatikleştirmek ve verimliliği artırmak için SQL stored procedures ve trigger'lar kullanılmıştır.
 
@@ -82,7 +82,7 @@ Kullanıcı etkinliklerini ve tarihlerini kaydeden tablodur.
 |-------------------|-----------|-----------------------------------------------------------------|
 | `LogID`           | INT       | Her kaydın benzersiz ID'si (Primary Key)                       |
 | `UserID`          | INT       | Kullanıcının ID'si (Foreign Key)                               |
-| `ActivityStatus`   | NVARCHAR  | Kullanıcının etkinlik durumu (örn. "Giriş", "Çıkış")          |
+| `ActivityStatus`   | NVARCHAR  | Kullanıcının etkinlik durumu (örn. "Aktif", "Pasif")          |
 | `LogDate`         | DATETIME  | Etkinliğin gerçekleştiği tarih ve saat                         |
 
 
