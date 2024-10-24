@@ -1,8 +1,8 @@
-# Kitaplık Yönetim Sistemi 📚
+# 📚 Kitaplık Yönetim Sistemi 
 
 Bu proje, kişisel kitaplık verilerinizi yönetmek için geliştirilmiş bir **SQL** tabanlı kitaplık yönetim sistemidir. Proje; kitapların, kullanıcıların ve okuma sürelerinin takibini sağlar. Ayrıca veri manipülasyonu ve kullanıcıların okuma alışkanlıklarını izlemek için **stored procedure** ve **trigger** kullanımı içerir.
 
-## Özellikler 🚀
+## 🚀 Özellikler 
 
 - 📖 **Kitap Ekleme:** Yeni kitaplar eklenebilir ve bu kitaplar için gerekli tüm bilgiler depolanabilir.
 - 👤 **Kullanıcı Yönetimi:** Kullanıcıların sisteme eklenmesi ve güncellenmesi işlemleri gerçekleştirilebilir.
@@ -11,7 +11,7 @@ Bu proje, kişisel kitaplık verilerinizi yönetmek için geliştirilmiş bir **
 - 🔄 **Etkinlik Günlüğü:** Kullanıcıların etkinlikleri kaydedilir, böylece okuma alışkanlıkları analiz edilebilir.
 - 📝 **SQL Stored Procedures & Triggers:** Veri tabanı işlemlerini otomatikleştirmek ve verimliliği artırmak için SQL stored procedures ve trigger'lar kullanılmıştır.
 
-## Tablolar 📊
+## 📊 Tablolar 
 
 Projede kullanılan temel tablolar ve bu tablolardaki verilerin açıklamaları aşağıda yer almaktadır:
 
@@ -85,5 +85,8 @@ Kullanıcı etkinliklerini ve tarihlerini kaydeden tablodur.
 | `ActivityStatus`   | NVARCHAR  | Kullanıcının etkinlik durumu (örn. "Aktif", "Pasif")          |
 | `LogDate`         | DATETIME  | Etkinliğin gerçekleştiği tarih ve saat                         |
 
+## 📂 Proje Dosyaları
 
-**Not:** Bu projedeki veriler rastgele üretilmiştir.
+Projeye ait klasörde, **veritabanına ait bir backup dosyası** ve veri setinin oluşturulması için yazılan **SQL sorgularını içeren bir query dosyası** yer almaktadır. Bu dosyalar, projeyi kurmak ve veri tabanını kullanıma hazır hale getirmek için kullanılabilir.
+
+**Not:** Bu projedeki veriler **rastgele** üretilmiştir.
